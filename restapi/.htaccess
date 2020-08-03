@@ -1,0 +1,11 @@
+php_flag display_errors on
+
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^messages/([0-9]+)$ controller/message.php?messageid=$1 [L]
+RewriteRule ^messages$ controller/message.php [L]
+
