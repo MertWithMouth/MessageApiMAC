@@ -1,6 +1,7 @@
 <?php
 
 
+
 require_once('db.php');
 require_once('../model/Message.php');
 require_once('../model/Response.php');
@@ -195,6 +196,7 @@ if(array_key_exists("messageid", $_GET)){
 elseif(empty($_GET)){
 
     if($_SERVER['REQUEST_METHOD'] ==='GET'){
+        
 
         try{
 
@@ -257,7 +259,7 @@ elseif(empty($_GET)){
     }
 
     elseif($_SERVER['REQUEST_METHOD'] === 'POST') {
-    
+        
     
     try {
      
